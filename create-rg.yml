@@ -8,5 +8,5 @@
   tasks:
   - name: Create resource group
     azure_rm_resourcegroup:
-      name: rg_test
-      location: uksouth
+      name: "{{ prefix }}-{{ rgproject }}"
+      location: "{{ location }}"
